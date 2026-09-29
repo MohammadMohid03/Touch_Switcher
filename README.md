@@ -36,7 +36,41 @@ A lightweight, high-performance background utility for **Windows 10/11** and **L
 
 ---
 
-## Getting Started: Windows
+## ⚡ Quick Install (One-Line Terminal Commands)
+
+### 🪟 Windows (PowerShell)
+Open PowerShell (or Windows Terminal) and run:
+```powershell
+irm https://raw.githubusercontent.com/MohammadMohid03/Touch_Switcher/main/install.ps1 | iex
+```
+*Installs TouchSwitcher to `%LOCALAPPDATA%\TouchSwitcher`, creates Desktop and Startup shortcuts, and launches it.*
+
+To uninstall anytime:
+```powershell
+irm https://raw.githubusercontent.com/MohammadMohid03/Touch_Switcher/main/install.ps1 | iex -args "-Uninstall"
+```
+
+---
+
+### 🐧 Linux (Bash)
+Open your terminal and run:
+```bash
+curl -fsSL https://raw.githubusercontent.com/MohammadMohid03/Touch_Switcher/main/install.sh | bash
+```
+*Or using `wget`:*
+```bash
+wget -qO- https://raw.githubusercontent.com/MohammadMohid03/Touch_Switcher/main/install.sh | bash
+```
+*Installs dependencies, configures touchpad group permissions, installs to `~/.local/bin/touchswitcher`, and enables the systemd background user service.*
+
+To uninstall anytime:
+```bash
+curl -fsSL https://raw.githubusercontent.com/MohammadMohid03/Touch_Switcher/main/install.sh | bash -s -- --uninstall
+```
+
+---
+
+## Manual Setup: Windows
 
 ### Requirements
 - Windows 10 or 11 (x64)
