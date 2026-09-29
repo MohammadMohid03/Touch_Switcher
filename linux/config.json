@@ -1,0 +1,18 @@
+{
+  "min_swipe_distance": 45,
+  "cooldown_ms": 250,
+  "horizontal_ratio": 1.25,
+  "vertical_ratio": 1.15,
+  "actions": {
+    "swipe_right": "next_app",
+    "swipe_left": "prev_app",
+    "swipe_up": "overview",
+    "swipe_down": "dismiss"
+  },
+  "custom_commands": {
+    "next_app": "",
+    "prev_app": "",
+    "overview": "",
+    "dismiss": ""
+  }
+}

@@ -1,0 +1,11 @@
+[Unit]
+Description=TouchSwitcher (3-finger touchpad app switcher)
+After=graphical-session.target
+
+[Service]
+ExecStart=%h/.local/bin/touchswitcher
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target
